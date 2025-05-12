@@ -15,7 +15,7 @@ const defaultValues = {
   company: "",
 };
 const usersPromise = fetchUsersPromise();
-export const HomePage = () => {
+const HomePage = () => {
   const [filters, setFilters] = useState<IFilters>(defaultValues);
 
   const isSetAnyFilter = (Object.keys(filters) as (keyof IFilters)[]).some(
@@ -44,3 +44,5 @@ export const HomePage = () => {
     </div>
   );
 };
+
+export default HomePage;
