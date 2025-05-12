@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Manrope } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header/Header";
+import { ThemeProvider } from "next-themes";
 
-const geistSans = Manrope({
-  variable: "--font-man",
+const roboto = Roboto({
+  weight: "400",
   subsets: ["latin"],
 });
 
@@ -19,10 +20,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={geistSans.variable}>
-        <Header />
-        {children}
+    <html suppressHydrationWarning lang="en">
+      <body className={roboto.className}>
+        <ThemeProvider>
+          <Header />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

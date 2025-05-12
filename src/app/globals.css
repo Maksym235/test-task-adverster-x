@@ -4,7 +4,7 @@
   --stroke: #cccccc; /* світлий обвід */
   --foreground: #f5f5f5; /* майже білий текстовий фон */
   --headTypeColor: #000000; /* заголовки — чорний */
-  --typeColor: #222222; /* основний текст */
+  --typeColor: #383838; /* основний текст */
   --accentColor: #f35034; /* залишаємо яскравий */
   --gradient: linear-gradient(
       249deg,
@@ -18,8 +18,8 @@
   --secondaryBackground: #1b1b1b;
   --stroke: #262626;
   --foreground: #171717;
-  --headTypeColor: #000;
-  --typeColor: #272727;
+  --headTypeColor: #fff;
+  --typeColor: #c0c0c0;
   --accentColor: #f35034;
   --gradient: linear-gradient(
       249deg,
@@ -39,6 +39,7 @@ body {
   background: var(--background);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100dvh;
 }
 
 * {

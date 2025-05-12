@@ -1,5 +1,5 @@
-import { IFilters } from "@/types/Filters";
 import { IUser } from "@/types/Users";
+import { IFilters } from "@/types/Filters";
 
 export const useFilteredUsers = (users: IUser[], filters: IFilters) => {
   return users.filter((user) => {

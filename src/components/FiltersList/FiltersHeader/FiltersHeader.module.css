@@ -1,0 +1,67 @@
+.filters_header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.open_btn_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.clean_all_btn {
+  background-color: var(--accentColor);
+  border: none;
+  border-radius: 16px;
+  margin-left: auto;
+  padding: 8px 12px;
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.2 ease;
+  cursor: pointer;
+  color: var(--headTypeColor);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 16px; /* 133.333% */
+  letter-spacing: -0.24px;
+}
+
+.hidden_btn {
+  visibility: hidden;
+  opacity: 0;
+  cursor: none;
+}
+.header_text {
+  color: var(--headTypeColor);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+  letter-spacing: -0.24px;
+}
+
+.filter_btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.with_point {
+  position: relative;
+}
+
+.with_point::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 5px;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--accentColor);
+}

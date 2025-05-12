@@ -1,5 +1,4 @@
 export interface IFilters {
-  id: number;
   name: string;
   username: string;
   email: string;
@@ -10,12 +9,22 @@ export interface IFilters {
 }
 
 export interface IFiltersList {
-  updateFilter: (key: string, value: string) => void;
+  updateFilter: (key: keyof IFilters, value: string) => void;
   initialFilters: IFilters;
+  isSetAnyFilter: boolean;
+  cleanAll: () => void;
+}
+
+export interface IFiltersHeader {
+  isSetAnyFilter: boolean;
+  cleanAll: () => void;
+  toggleOpen: () => void;
 }
 
 export interface IFiltersListItem {
   update: (value: string) => void;
+  cleanValue: (key: keyof IFilters, value: string) => void;
   name: string;
   type: string;
+  value: string;
 }

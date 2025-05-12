@@ -4,14 +4,49 @@
   border: 1px solid var(--stroke);
 }
 
-.title {
-  font-size: 24px;
-  font-weight: 600;
-  color: var(--headTypeColor);
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
 }
 
-.text {
-  font-size: 18px;
+.title {
+  color: var(--accentColor);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.36px;
+  margin-bottom: 20px;
+}
+
+.text_block {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.label {
+  color: var(--headTypeColor);
+  font-size: 12px;
+  font-style: normal;
   font-weight: 400;
-  color: var(--typeColor);
+  line-height: 16px;
+  letter-spacing: -0.24px;
+  opacity: 0.5;
+}
+
+.value {
+  color: var(--headTypeColor);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.24px;
+}
+
+@media screen and (min-width: 599px) {
+  .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }

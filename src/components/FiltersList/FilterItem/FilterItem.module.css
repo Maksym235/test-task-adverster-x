@@ -1,0 +1,36 @@
+.container {
+  position: relative;
+}
+.input {
+  display: flex;
+  width: 300px;
+  background: var(--secondaryBackground);
+  border: none;
+  padding: 8px 0px 8px 16px;
+  border-bottom: 2px solid var(--stroke);
+  outline: none;
+  /* position: relative; */
+}
+
+.input::placeholder {
+  color: var(--headTypeColor);
+
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+  letter-spacing: -0.24px;
+  opacity: 0.5;
+  /* position: relative; */
+}
+
+.clean_btn {
+  position: absolute;
+  left: 270;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
