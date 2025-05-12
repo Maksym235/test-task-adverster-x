@@ -11,7 +11,7 @@
 
 ## 🔗 Live Demo
 
-[Перейти до демо (якщо доступно)](https://your-app-url.com)
+[Перейти до демо](https://test-task-adverster-x.vercel.app/)
 
 ---
 
