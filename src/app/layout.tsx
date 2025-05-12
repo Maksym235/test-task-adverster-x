@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
+import { Header } from "@/components/Header/Header";
 
 const geistSans = Manrope({
   variable: "--font-man",
@@ -19,7 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={geistSans.variable}>{children}</body>
+      <body className={geistSans.variable}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
